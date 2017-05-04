@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.joans.timetracker.InfoActivitatActivity">
+
+
+    <TextView
+        android:text="@string/Nom"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="18dp"
+        android:id="@+id/nomProjecte" />
+
+    <TextView
+        android:text="@string/Nom"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nomProjecte"
+        android:layout_alignEnd="@+id/nomProjecte"
+        android:layout_marginTop="32dp"
+        android:id="@+id/textNomProjecte" />
+
+    <TextView
+        android:text="@string/Descripcio"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textNomProjecte"
+        android:layout_alignStart="@+id/textNomProjecte"
+        android:layout_marginTop="31dp"
+        android:id="@+id/descProjecte" />
+
+    <TextView
+        android:text="@string/Descripcio"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/descProjecte"
+        android:layout_alignStart="@+id/descProjecte"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textDescProjecte" />
+
+    <TextView
+        android:text="@string/data"
+        android:layout_width="wrap_content"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:layout_height="wrap_content"
+        android:id="@+id/textDataFinal"
+        android:layout_alignBaseline="@+id/dataFinal"
+        android:layout_alignBottom="@+id/dataFinal"
+        android:layout_alignStart="@+id/textDataInici" />
+
+    <TextView
+        android:text="@string/Durada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:id="@+id/durada"
+        android:layout_below="@+id/dataFinal"
+        android:layout_alignStart="@+id/dataFinal"
+        android:layout_marginTop="48dp" />
+
+    <TextView
+        android:text="@string/tempsDurada"
+        android:layout_width="wrap_content"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:layout_height="wrap_content"
+        android:id="@+id/textDurada"
+        android:layout_alignBaseline="@+id/durada"
+        android:layout_alignBottom="@+id/durada"
+        android:layout_alignStart="@+id/textDataFinal" />
+
+    <TextView
+        android:text="@string/Data_fi"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dataFinal"
+        android:layout_marginTop="51dp"
+        android:layout_below="@+id/dataInici"
+        android:layout_alignEnd="@+id/dataInici" />
+
+    <TextView
+        android:text="@string/Data_inici"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:id="@+id/dataInici"
+        android:layout_marginTop="81dp"
+        android:layout_below="@+id/textDescProjecte"
+        android:layout_toStartOf="@+id/textDescProjecte"
+        android:layout_marginEnd="20dp" />
+
+    <TextView
+        android:text="@string/data"
+        android:layout_width="wrap_content"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:layout_height="wrap_content"
+        android:id="@+id/textDataInici"
+        android:layout_alignBaseline="@+id/dataInici"
+        android:layout_alignBottom="@+id/dataInici"
+        android:layout_toEndOf="@+id/textNomProjecte" />
+</RelativeLayout>

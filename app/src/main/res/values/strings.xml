@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">TimeTracker</string>
+    <string name="Start">Start</string>
+    <string name="Activity_type">Activity type</string>
+    <string name="toggle_tasca">toggle tasca</string>
+    <string name="Afegir">Afegir</string>
+    <string name="Descripcio">Descripció</string>
+    <string name="DescripcioExemple">This is the first line\nThis is the second line\nThird line</string>
+    <string name="Nom">Nom</string>
+    <string name="Tab1">Tab1</string>
+    <string name="Tab2">Tab2</string>
+    <string name="Afegir_Tasca">Afegir Tasca</string>
+    <string name="Afegir_Projecte">Afegir Projecte</string>
+    <string name="Data_inici">Data inici</string>
+    <string name="Data_incial">Modificar Data inici</string>
+    <string name="Data_final">Modificar Data final</string>
+    <string name="Modificar_Durada">Modificar Durada</string>
+    <string name="Durada">Durada</string>
+    <string name="Dia">Dia</string>
+    <string name="Afegir_interval">Afegir interval</string>
+    <string name="Data_fi">Data final</string>
+    <string name="data">00/00/0000</string>
+    <string name="tempsDurada">00h 00m</string>
+    <string name="mostra_intervals">Mostra Intervals</string>
+    <string name="Temps_Límit">Temps limit</string>
+    <string name="Programada">Programada</string>
+    <string name="Hora">Hora</string>
+</resources>

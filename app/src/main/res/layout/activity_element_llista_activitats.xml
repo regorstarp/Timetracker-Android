@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?attr/listPreferredItemHeight"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="8dp">
+
+    <TextView
+        android:id="@+id/nomActivitat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="15dp"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/duradaActivitat"
+        android:textAppearance="?attr/textAppearanceListItemSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/btnActivitat"
+        android:layout_toEndOf="@+id/nomActivitat" />
+
+    <ImageView
+        android:id="@+id/iconActivitat"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:contentDescription="@string/Activity_type"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:id="@+id/btnActivitat"
+        android:layout_width="60dp"
+        android:layout_height="55dp"
+        android:background="@null"
+        android:contentDescription="@string/toggle_tasca"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true">
+
+    </ImageButton>
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FormulariAfegirActivitat">
+
+    <TextView
+        android:text="@string/Nom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nomTasca" />
+
+    <Button
+        android:text="@string/Afegir_Tasca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAfegirTasca"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:onClick="afegirTasca"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:id="@+id/nomTascaInput"
+        android:layout_below="@+id/nomTasca"
+        android:layout_alignParentStart="true"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:text="@string/Descripcio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/descTasca"
+        android:layout_below="@+id/nomTascaInput"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:id="@+id/descTascaInput"
+        android:layout_below="@+id/descTasca"
+        android:layout_alignParentStart="true"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:text="@string/Temps_Límit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickSwitcherLimitada"
+        android:layout_below="@+id/descTascaInput"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="25dp"
+        android:id="@+id/checkBoxLimitada" />
+
+    <CheckBox
+        android:text="@string/Programada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickSwitcherProgramada"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignStart="@+id/checkBoxLimitada"
+        android:id="@+id/checkBoxProgramada" />
+
+    <Button
+        android:text="@string/Durada"
+        android:layout_width="wrap_content"
+        android:visibility="invisible"
+        android:layout_height="wrap_content"
+        android:onClick="mostratpDurada"
+        android:layout_marginStart="39dp"
+        android:id="@+id/btnLimitada"
+        android:layout_alignBaseline="@+id/checkBoxLimitada"
+        android:layout_alignBottom="@+id/checkBoxLimitada"
+        android:layout_toEndOf="@+id/textView" />
+
+    <Button
+        android:text="@string/Hora"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="mostratpProgramada"
+        android:id="@+id/btnProgramada"
+        android:layout_alignBottom="@+id/checkBoxProgramada"
+        android:layout_alignStart="@+id/btnLimitada" />
+
+</RelativeLayout>
